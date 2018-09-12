@@ -1,0 +1,80 @@
+1 - What is a function?
+    A function is a named sequence of statements that performs a computation.
+
+2 - What does mean to have a function that "takes" a value?
+    The expression in parentheses is called the argument of the function (a function “takes” an argument). The result, for this function, is the type of the argument.
+
+3 - What is a return value?
+    A function “takes” an argument and “returns” a result. The result is called the return value.
+
+4 - What do type conversion functions do?
+    These convert values from one type to another.
+
+5 - What happens if you call the int() function and pass it a string?
+    ValueError: invalid literal for int():
+
+6 - What happens if you call the str() function and pass it an int?
+    str converts its argument to a string
+
+7 - How do you import a class to one of your programs?
+    import <module>
+
+8 - How do you use math functions in one of your programs?
+    First, import it. To access one of the functions, specify the name of the module and the name of the function, separated by a dot (dot notation).
+
+9 - What is the dot notation?
+    ^^
+
+10 - What is composition?
+    Taking small building blocks and composing them.
+
+11 - Give an example of composition in a function call?
+
+12 - How do you define a function?
+    By specifying the name of a new function and the sequence of statements that execute when the function is called.
+
+13 - Provide the function header of a function named hello_world().
+    def hello_world():
+
+14 - Provide the function header and body of a function named hello_world() that prints out "Hello World" 3 times.
+    def hello_world():
+        return "Hello World " * 3
+
+15 - Can functions call other functions?
+    yes
+
+16 - Complete Exercise 3.1 (p.26) and 3.2 (p.27) from the text book.
+    3.1 NameError: name is not defined
+    3.4 The program runs ok
+
+17 - What is the flow of execution?
+    The order which statements are executed
+
+18 - Where does a program begin execution?
+    From top to bottom
+
+19 - How does a function call change the flow of of execution?
+    Statements inside the function are not executed until function is called.
+
+20 - Do the rules of composition apply to method parameters as well?
+
+21 - Do parameters and variables inside of a function exist outside of the method? Why or why not?
+    No, they are local
+
+22 - How can stack diagrams be useful?
+    They show value of each variable, they also show the function each variable belongs to.
+
+23 - What is the difference between a "fruitful" function and a void function?
+    Fruitful ones yield results, void functions perform an action but don't return a value.
+
+24 - What are some of the reasons we separate our code into functions?
+    Group statements, helps prevent repetitions, easier debugging, some functions can be reused.
+
+25 - What is the difference between the following two statements?
+    import math
+    <and>
+    from math import *
+    You can do both, but being specific is more concise, also to avoid conflicts between names
+
+    How can you use the functions of the math module in each case?
+    The same way

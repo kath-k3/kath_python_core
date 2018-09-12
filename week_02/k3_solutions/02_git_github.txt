@@ -1,0 +1,52 @@
+
+
+3 - Cloning repository from Github:
+    - create a new folder in your CodingNomads folder called labs
+    - if you haven't already, clone this repository inside of your labs folder
+    - create a new Github repository with the same name as the repository that you cloned
+    - add a new remote to your local git repository that points to your Github
+    - push the repository to your Github
+    - visit the Github repository to make sure the contents were pushed
+
+cd CodingNomads/
+mkdir labs
+git clone https://github.com/kath-k3/python_core/
+cd labs, mkdir python_core
+git remote add origin
+git push -u origin --all
+/not sure I am in a right place?/
+
+
+
+4 - Initializing a new git repository:
+    - in your CodingNomads folder, create new folder git_practice
+    - inside git_practice:
+        - initialize folder as a git folder (make sure you are in the correct folder when initializing)
+        - make new file
+        - add file
+        - commit file
+        - on Github, create new git_practice repository
+        - add remote that points to the Github repository
+        - push committed file to Github
+        - practice the following git flow until you feel comfortable:
+            - Create or modify file
+            - Add file(s)
+            - Commit file(s)
+            - Push file(s) to Github repository
+
+mkdir git_practice
+cd git_practice
+git init
+echo "text" > filename.txt
+git add filename.txt
+git commit -m "Made such and such changes"
+git remote add origin https://github.com/kath-k3/git_practice  (verify: git remote -v)
+
+
+5 - More practice cloning
+    - spend some time looking at the repositories on Github
+    - find three projects that interest you and clone them to your local machine (in a new folder inside of CodingNomads)
+    - create repositories on your Github for each project
+    - add remotes to each local repo
+    - push each repo to your Github
+

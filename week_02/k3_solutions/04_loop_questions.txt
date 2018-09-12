@@ -1,0 +1,39 @@
+1 - What is a boolean expression?
+    An expression that is either true or false.
+
+2 - What are relational operators used for?
+    A way to test or define some kind of relation between two entities
+
+3 - What is the difference between == and = ?
+    = is an assignment operator and == is a relational operator
+
+4 - What are the three logical operators?
+    and, or, and not
+
+5 - What do relational and logical operators evaluate to?
+
+6 - What is the if statement used for?
+    To evaluate conditions.
+
+7 - What is an if/else statement used for?
+    For alternative execution, if something is true, do one thing; if not, do something else.
+
+8 - What is a chained conditional? How do you chain conditionals?
+    If there are more than two conditionals. if, elif, else.
+
+9 - What is a nested conditional?
+    One conditional nested within another.
+
+10 - Is there a limit to how many conditional statements you can nest?
+    No, but it can become very hard to read/follow.
+
+11 - What is a while loop?
+    Do something as long as the condition is met, repeating until the condition becomes false.
+
+12 - What is a for loop? How is it different than a while loop?
+    For loop is used to iterate over the elements of a sequence. Usually has a loop counter or loop variable.
+
+11 - What does the break statement do?
+    breaks out of the innermost enclosing of for or while loop
+
+12 - Is there a limit to how many loops you can nest?

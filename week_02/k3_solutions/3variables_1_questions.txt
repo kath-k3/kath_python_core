@@ -1,0 +1,45 @@
+1 - What is a value?
+    A value is one of the basic things a program works with, like a letter or a number.
+
+2 - What is a type?
+    A value has a type, e.g string or integer
+
+3 - What are some values we have seen so far?
+    e.g 2, "hello world"
+
+4 - What is an example of a int? A floating-point number? A string?
+    numbers with a decimal point belong to a type called float
+
+5 - What is a variable?
+    A variable is a name that refers to a value.
+
+6 - How do you assign the variable x to the value of 10?
+    x = 10
+
+7 - What is an example of an illegal variable name?
+    eg startting with integer, containing illegal characters or Python keywords
+
+8 - What are keywords and what are they used for?
+    the interpreter uses keywords to recognize the structure of the program
+
+9 - What are operands and what are they used for?
+    Operands are the objects that are manipulated
+
+10 - Use the interpretor to demonstrate the use of some of the operands. Give the input and output of addition, multiplication and exponentiation.
+
+11 - What is floor division? How does Python 3 handle floor division?
+    // for floor division
+    floor division chops off the fraction part
+
+12 - What is the difference between an expression and a statement?
+    An expression is a combination of values, variables, and operators.
+    A statement is a unit of code that the Python interpreter can execute (e.g. print and assignment).
+
+13 - What is the order of operations?
+    PEMDAS - parentheses, exponentiation, multiplication&division; operators with same precedence come left to right
+
+14 - What does the + operand do when performed on strings? What does the * operand do when performed on strings? What operands can you not use on strings?
+    '+' for concatenation
+    '*' for repetition
+
+15 - How do you put comments in your code? What are comments used for?
