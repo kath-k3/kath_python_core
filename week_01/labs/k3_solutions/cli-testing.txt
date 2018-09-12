@@ -1,0 +1,48 @@
+cd ..
+* make new folder
+    mkdir CodingNomads
+* navigate to folder
+    cd CodingNomads
+* create new directory
+    mkdir <name>
+* display path
+    pwd
+* create file
+    echo "File 1" > file1.txt
+* list contents
+    ls
+* rename file
+    mv <old_name> <new_name>
+* copy file
+    cp <file> <directory>
+* move file
+    mv <file> <new-location>
+* remove file
+    rm <file>
+* remove folder
+    rm -r <folder>
+
+## vim
+- in terminal: vim
+- in insert mode: "I'm writing in vim"
+- esc, :wq <filename>
+- #search in vim:
+    :greap "pattern" *.txt
+
+
+## advanced CLI
+ - What is the difference between the two commands > and >>?
+    The >> appends to a file or creates the file if it doesn't exist.
+    The > overwrites the file or creates it if it doesn't exist.
+    Examples:
+    ($ ls > allmyfiles.txt creates the file "allmyfiles.txt" and fills it with the directory listing from the ls command
+
+    $ echo "End of directory listing" >> allmyfiles.txt adds "End of directory listing" to the end of the file "allmyfiles.txt")
+
+- Append some text of a file to another file
+    $ grep text old_file.txt >> new_file.txt
+
+- Overwrite the content of my_file.txt with "tell me"
+
+**grep [options] pattern [files]
+

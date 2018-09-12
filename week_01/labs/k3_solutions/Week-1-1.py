@@ -1,0 +1,10 @@
+
+print()
+print('    PPPP   Y     Y  TTTTTTTTT  H    H      O     N       N')
+print('    P   P   Y   Y       T      H    H     O O    N N     N')
+print('    P   P    Y Y        T      H    H    O   O   N  N    N')
+print('    PPPP      Y         T      HHHHHH    O   O   N   N   N')
+print('    P         Y         T      H    H    O   O   N    N  N')
+print('    P         Y         T      H    H     O O    N     N N')
+print('    P         Y         T      H    H      O     N       N')
+print()

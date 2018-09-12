@@ -1,0 +1,35 @@
+0 - Why do we not program in plain English (or another natural language)?
+    * Computers would not understand it.
+
+1 - What is the difference between an interpretor and a compiler?
+    Which is used for Python?
+    * Both process high-level languages into low-level languages.
+    Interpreter reads the porgram and executes it, doing what the program says; step by step.
+    Complier reads the program and translates it completely before running the program.
+    Python programs are executed by an interpreter.
+
+2 - What are two ways to execute Python code?
+    * Interactive mode and script mode.
+
+3 - How do you execute a Python script?
+    * You tell the interpreter the name of the file. (Preceeded by 'python')
+
+4 - In your own words describe what a program is
+    and what programs are made up of.
+    * A program is a sequence of instructions, usually breaking a bigger more complex task into smaller subtasks.
+
+5 - What are the main three types of errors and how do you come across them?
+    * Syntax errors - if the structure of a program or rules are not followed
+    Runtime errors - appears after the program has started running; also called exceptions.
+    Semantic errors - Program will run ok, but it will not do the right thing but something else.
+
+6 - What does it mean to debug a program?
+    What are some ways to debug a program?
+    * Trying to figure out what is wrong with the program, what are the errors. You make an hyopthesis and modify the program and run again.
+
+7 - What is a “high-level language” / what’s a “low-level-language”?
+    * high-level languages have to be processed into low-level before they can run. It takes time but they are easier to write, read and they are shorter.
+
+
+
+
