@@ -10,5 +10,3 @@ for vowel in vowels:
         if vowel == letter:
             print (vowel)
 
-
-
