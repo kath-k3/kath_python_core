@@ -8,18 +8,20 @@
 user_input = input("Give me a string please: ")
 
 def lower_upper_input(given_string):
-    given_string = user_input
     print (given_string.upper(), given_string.lower())
 
 
 vowels = ['a', 'e', 'i', 'o', 'u']
 def vow_con(user_input):
+    '''Returns new string with vowels lower case and consonants upper case'''
+    new_string = ''
     for letter in user_input:
         if letter in vowels:
-            print (letter.lower())
+            new_string += (letter.lower())
         else:
-            print (letter.upper())
+            new_string += (letter.upper())
+    return new_string
 
 
-lower_upper_input()
-
+lower_upper_input(user_input)
+print (vow_con(user_input))
