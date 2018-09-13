@@ -1,0 +1,53 @@
+1 - What is the difference between a list and a dictionary?
+    In lists, the indices have to be integers, in dict they can be almost any type
+
+2 - What is a key-value pair?
+    In dictionary the indicies are called keys and each key maps to a value.
+
+3 - How do you add an item to the dictionary first_dict using square
+    brackets?
+    first_dict['key_1'] = 'value_1'
+
+4 - How do you add several items to the dictionary first_dict using
+    curly braces?
+    first_dict.update({'key_2':2, 'key_3':3})
+
+5 - When you print out a dictionary, is there a order to the items?
+    Why or why not?
+    No, You can find the values by their keys; keys are unique.
+
+6 - How do you print out a value using a key?
+    print first_dict['key_1']
+
+7 - How does the in operator work with dictionaries?
+    It tells you if sth appears as key in the dict.
+
+8 - What is an implementation?
+    A way of performing a computation.
+
+9 - Write an example for loop to traverse a dictionary loop_dict and
+    print out the keys and values.
+    for key, item in dict:
+        print key, item
+
+10 - How can you find search for a key given a value.
+    What is this called?
+
+11 - Can lists be keys of a dictionary? Why or why not?
+    No, error: 'list objects are unhashable'. So, the keys have to be immutable.
+
+12 - Can lists be values of a dictionary? Why or why not?
+    Yes
+
+13 - What is a global variable?
+    Variables that are created outside a function. Global - can be accessed from any function.
+
+14 - How do you reassign a global variable inside of a function?
+    something = False
+    def example():
+        global something
+        something = True
+
+15 - When do you not need to use the "global" keyword to modify the
+    value of a global variable?
+    If the global value is mutable, you can modify it without declaring it.

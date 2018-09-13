@@ -1,0 +1,29 @@
+1 - What is one important difference between tuples and lists?
+    Tuples are immutable
+
+2 - What are two ways to create a tuple?
+    Create a comma-separated list of values; or use the built-in function tuple.
+
+3 - Give an example of tuple assignment to assign two variables.
+    t = tuple(m, n)
+
+4 - Why is it beneficial to return a tuple from a function?
+    Function can only return one value, this way we can "pack" the values in tuple
+
+5 - What are variable-length arguments?
+    The syntax *args in function def-s is used to pass a variable number of arguments to a function.
+    def myFun(*argv):
+    for arg in argv:
+        print (arg)
+
+6 - How is gather and scatter used?
+    One can call * a gather parameter (when used in function arguments definition) or a scatter operator (when used at function invocation).
+
+7 - What does the zip function do?
+    zip is a built-in function taking two or more sequences and “zips” them into a list of tuples where each tuple contains one element from each sequence (length of the shorter one).
+
+8 - What does the items method do?
+    Dictionary method that returns list of tuples, each tuple being key-value pair.
+
+9 - How are tuples compared when relational operators are used?
+    Tuples are compared position by position: the first item of first tuple is compared to the first item of the second tuple.
