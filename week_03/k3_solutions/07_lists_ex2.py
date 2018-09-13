@@ -16,7 +16,7 @@ excl_list = []
 #        else:
 #            excl_list.append(j)
 
-#print (incl_list, excl_list)
+print (list_one, list_two)
 
 i = 0
 while i < len(list_two):
@@ -29,5 +29,9 @@ while i < len(list_two):
                 excl_list.append(list_two[i])
             j_index += 1
     i += 1
+
+for item in list_one:
+    if item not in incl_list:
+        excl_list.append(item)
 
 print ("Inclusion list: " + str(incl_list), "Exclusion list: " + str(excl_list))
