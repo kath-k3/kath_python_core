@@ -46,11 +46,13 @@ class EntertainmentShow():
     # Couldn't figure out the issue here: show_1.organizer gives an error
         weekdays = ['Wednesday', 'Thursday', 'Friday']
         if self.weekday in weekdays:
+            # each of the organizers is responsible for one day only
             organizer = EntertainmentShow.organizers[weekdays.index(weekday)]
-            self.organizer = organizer
-            return organizer
+            self.organizer = weekday
+            return self.organizer
         else:
-            print("We don't run shows on those days, go home to sleep!")
+            return None
+            #print("We don't run shows on those days, go home to sleep!")
 
 
     def __str__(self):
@@ -59,8 +61,9 @@ class EntertainmentShow():
 
 class Comedy(EntertainmentShow):
     """ Stuff """
-    def __init__(self, language='English'):
-        type_of_show = "Comedy"
+    type_of_show = "Comedy"
+
+    def __init__(self, language='English', type_of_show = type_of_show):
         weekday = "Friday"
         self.language = language
         EntertainmentShow.__init__(self, weekday, type_of_show)
