@@ -1,0 +1,24 @@
+- What is the difference between class attributes and
+    instance attributes?
+
+    class Car;
+
+        numberOfCars = 0
+
+
+    obj1 = MyClass()
+    obj2 = MyClass()
+
+- What is inheritance?
+    Inheritance is the ability to define a new class that is a modified version of an existing class.
+
+- Why do we use inheritance?
+
+- How does a class inherit another class?
+
+
+- What is an example of a parent/child class relationship?
+    Entertainment show
+
+- How many levels can a hierarchy extend?
+    Any

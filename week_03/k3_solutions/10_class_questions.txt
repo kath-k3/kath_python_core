@@ -19,7 +19,7 @@ What does it mean when an object is embedded?
 That it is an attribute of another object.
 
 What is the difference between copy.copy and copy.deepcopy? What do they each do?
-copy.copy duplicates the class but not the embedded obejcts, essentially being only one level deep. It will not create copies of the child objects themselves.
+copy.copy duplicates the class but not the embedded objects, essentially being only one level deep. It will not create copies of the child objects themselves.
 A deep copy makes the copying process recursive. Copying an object this way walks the whole object tree to create a fully independent clone of the original object and all of its children.
 
 What is the difference between a pure function and a modifier?
@@ -36,12 +36,13 @@ Method is a function that takes a class instance as its first parameter.
 
 How is a method different than a function?
 Methods are called by object variable. Functions are defined outisde of classes.
+(Has reference to instance)
 
 What is invocation?
-Statement that calls a method.
+Statement that calls a method (call on an instance of the class)
 
 What is the __init__ method and what is it used for?
-Known as constructor, it is called when an object is created from the class to initialize the attrbutes of a class.
+Known as constructor, it is called when an object is created from the class to initialize the attributes of a class.
 
 Give an example __init__ method for a Car class with attributes: make, model and `year.
 class Car():

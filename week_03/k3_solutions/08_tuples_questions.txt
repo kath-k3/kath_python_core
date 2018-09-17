@@ -3,9 +3,12 @@
 
 2 - What are two ways to create a tuple?
     Create a comma-separated list of values; or use the built-in function tuple.
+    my_tuple = ()
+    t = tuple()
 
 3 - Give an example of tuple assignment to assign two variables.
     t = tuple(m, n)
+    name, age = "henry", 22
 
 4 - Why is it beneficial to return a tuple from a function?
     Function can only return one value, this way we can "pack" the values in tuple

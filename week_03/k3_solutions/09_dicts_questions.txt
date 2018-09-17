@@ -27,11 +27,12 @@
 
 9 - Write an example for loop to traverse a dictionary loop_dict and
     print out the keys and values.
-    for key, item in dict:
+    for key, item in dict.items():
         print key, item
 
 10 - How can you find search for a key given a value.
     What is this called?
+    value_1 = dict[key]
 
 11 - Can lists be keys of a dictionary? Why or why not?
     No, error: 'list objects are unhashable'. So, the keys have to be immutable.
