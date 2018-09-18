@@ -45,15 +45,16 @@ class EntertainmentShow():
     def select_organizer(self):
     # Couldn't figure out the issue here: show_1.organizer gives an error
         weekdays = ['Wednesday', 'Thursday', 'Friday']
-        if self.weekday in weekdays:
+        weekday = self.weekday
+        if weekday in weekdays:
             # each of the organizers is responsible for one day only
             organizer = EntertainmentShow.organizers[weekdays.index(weekday)]
-            self.organizer = weekday
-            return self.organizer
+            self.organizer = organizer
+            #return self.organizer
         else:
-            return None
-            #print("We don't run shows on those days, go home to sleep!")
-
+            no_show_statement = "We don't run shows on those days, go home to sleep!"
+            self.organizer = no_show_statement
+        return self.organizer
 
     def __str__(self):
         return f"{self.type_of_show} happens {self.weekday}s"
@@ -81,7 +82,8 @@ class Comedy(EntertainmentShow):
 
 
 
-show_1 = EntertainmentShow("Wednesday", "Cabaret")
+show_1 = EntertainmentShow("Monday", "Cabaret")
+show_1.select_organizer()
 print(show_1.organizer)
 #show_2 = Comedy()
 show_3 = Comedy(["Spanish"])
