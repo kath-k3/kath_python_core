@@ -31,7 +31,9 @@ def sed(p_str, rep_str, file_1, file_2):
     except IOError as ioe_1:
         print(ioe_1)
 
-sed("peet", "piit", 'kapsas.txt', 'kipsas.txt')
+sed("peet", "piit", 'kopsas.txt', 'kipsas.txt')
+
+
 
 
 

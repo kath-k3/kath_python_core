@@ -1,5 +1,5 @@
 import random
-from minproject_rpg import Hero, Opponent
+from minproject_rpg import Hero, Opponent, KindOpponent, SofterOpponent
 import time
 
 #make a main()function
@@ -14,12 +14,18 @@ def play_game():
         Opponent("Messi", 99),
         Opponent("Ratikic", 94),
         Opponent("Pique", 89),
+        KindOpponent("KinddMan"),
+        SofterOpponent("Softie")
         ]
+    #print(len(opponents))
+    #print(type(opponents))
+    #for i in opponents:
+    #    print(i)
 
     # create the hero
-    hero = Hero("Caden", 100)
+    hero = Hero("Caden", 2000)
 
-    #ask user for input and run until quirt
+    #ask user for input and run until quit
     while True:
         # end the game if all the opponents are defeated
         if len(opponents) <= 0:
@@ -35,9 +41,14 @@ def play_game():
             exit()
         elif cmd == "a":
             opponent = random.choice(opponents)
+            if "Kind" in str(opponent):
+                #opponents.clear()
+                print("You hit the hot spot! All opponents gone, game over!")
+                break
             if hero.attack(opponent):
-                print("You win!")
                 opponents.remove(opponent)
+                print("You win this round, we removed: ", opponent)
+
             else:
                 print("You lost..")
                 time.sleep(5)
