@@ -1,24 +1,26 @@
 - What is the difference between class attributes and
     instance attributes?
-
-    class Car;
-
-        numberOfCars = 0
-
-
-    obj1 = MyClass()
-    obj2 = MyClass()
+    Class attributes apply to every instance of the class.
 
 - What is inheritance?
     Inheritance is the ability to define a new class that is a modified version of an existing class.
+    the new class inherits the methods of the existing class.
 
 - Why do we use inheritance?
+    To make the code more reusable and consistent.
 
 - How does a class inherit another class?
+    For example:
+
+    class Person:
+        pass
+
+    class Employee(Person):
+        pass
 
 
 - What is an example of a parent/child class relationship?
-    Entertainment show
+    In an above example, the Employee class inherits the Person class methods and attributes.
 
 - How many levels can a hierarchy extend?
     Any

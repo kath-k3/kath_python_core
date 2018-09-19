@@ -5,74 +5,28 @@ build out the Point class example.
 The provided code to start is in file Point1.py in this folder.
 '''
 
-#What do we need to do here?
+# Not sure what we have to do here..
 
-from __future__ import print_function, division
+import math
+import classes_point1
 
-
-class Point:
-    """Represents a point in 2-D space.
-    attributes: x, y
-    """
-
-
-def print_point(p):
-    """Print a Point object in human-readable format."""
-    print('(%g, %g)' % (p.x, p.y))
+def line_between_points(p1, p2):
+    x_dist = p2.x - p1.x
+    y_dist = p2.y - p1.y
+    # math.hypot(x, y) -
+    # return the Euclidean norm, sqrt(x*x + y*y). This is the length of the vector from the origin to point (x, y)
+    line_length = round(math.hypot(x_dist, y_dist), 1)
+    print(line_length)
 
 
-class Rectangle:
-    """Represents a rectangle.
-    attributes: width, height, corner.
-    """
+my_p_1 = classes_point1.Point()
+my_p_1.x = 20.0
+my_p_1.y = 50.0
 
+my_p_2 = classes_point1.Point()
+my_p_2.x = 10.0
+my_p_2.y = 10.0
 
-def find_center(rect):
-    """Returns a Point at the center of a Rectangle.
-    rect: Rectangle
-    returns: new Point
-    """
-    p = Point()
-    p.x = rect.corner.x + rect.width/2.0
-    p.y = rect.corner.y + rect.height/2.0
-    return p
-
-
-def grow_rectangle(rect, dwidth, dheight):
-    """Modifies the Rectangle by adding to its width and height.
-    rect: Rectangle object.
-    dwidth: change in width (can be negative).
-    dheight: change in height (can be negative).
-    """
-    rect.width += dwidth
-    rect.height += dheight
-
-
-def main():
-    blank = Point()
-    blank.x = 3
-    blank.y = 4
-    print('blank', end=' ')
-    print_point(blank)
-
-    box = Rectangle()
-    box.width = 100.0
-    box.height = 200.0
-    box.corner = Point()
-    box.corner.x = 0.0
-    box.corner.y = 0.0
-
-    center = find_center(box)
-    print('center', end=' ')
-    print_point(center)
-
-    print(box.width)
-    print(box.height)
-    print('grow')
-    grow_rectangle(box, 50, 100)
-    print(box.width)
-    print(box.height)
-
-
-if __name__ == '__main__':
-    main()
+classes_point1.print_point(my_p_1)
+classes_point1.print_point(my_p_2)
+line_between_points(my_p_1, my_p_2)

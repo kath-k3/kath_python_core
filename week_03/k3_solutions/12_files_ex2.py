@@ -29,7 +29,7 @@ def sed(p_str, rep_str, file_1, file_2):
             except IOError as ioe_2:
                 print(ioe_2)
     except IOError as ioe_1:
-        print(ioe_1)
+        print("Can't read from that file",ioe_1)
 
 sed("peet", "piit", 'kopsas.txt', 'kipsas.txt')
 

@@ -84,7 +84,7 @@ class Comedy(EntertainmentShow):
 
 show_1 = EntertainmentShow("Monday", "Cabaret")
 show_1.select_organizer()
-print(show_1.organizer)
+print (show_1.organizer)
 #show_2 = Comedy()
 show_3 = Comedy(["Spanish"])
 show_4 = Comedy(["English"])
