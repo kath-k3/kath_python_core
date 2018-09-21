@@ -11,11 +11,11 @@ def main():
 def play_game():
     # create opponents
     opponents = [
-        Opponent("Messi", 99),
-        Opponent("Ratikic", 94),
-        Opponent("Pique", 89),
+        Opponent("Strong 1", 99),
+        Opponent("Strong 2", 94),
+        Opponent("Strong 3", 89),
         KindOpponent("KinddMan"),
-        SofterOpponent("Softie")
+        SofterOpponent("Softie"),
         ]
     #print(len(opponents))
     #print(type(opponents))
@@ -44,7 +44,30 @@ def play_game():
             if "Kind" in str(opponent):
                 #opponents.clear()
                 print("You hit the hot spot! All opponents gone, game over!")
-                break
+                exit()
+            if "Soft" in str(opponent):
+                count = 0
+                for opponent in opponents:
+                    if "Soft" in str(opponent):
+                        count += 1 #count how many softies in list
+                        #print(opponent)
+                        #print(count)
+                        #print(len(opponents))
+                        if (len(opponents) == count):
+                        #if list contains only softies, it is time to leave the game
+                            #print(opponents.index(opponent))
+                            print("Only softies are left, no more fun in this game, bye!")
+                            exit()
+                opponent.collaborate(hero)
+                # print("Hero: ", hero.level)
+                print("Soft Opponent: ", opponent.level, opponent.name)
+                if opponent.level > hero.level:
+                    opponents.append(opponent)
+                else:
+                    print(f"{Hero} was still better")
+                for opponent in opponents:
+                    print(opponent)
+                continue
             if hero.attack(opponent):
                 opponents.remove(opponent)
                 print("You win this round, we removed: ", opponent)

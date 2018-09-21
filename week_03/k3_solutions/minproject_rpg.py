@@ -33,7 +33,7 @@ class Opponent():
         self.level = level
 
     def __str__(self):
-        return f"Opponent {self.name} at Lvl {self.level}"
+        return f"Opponent {self.name}" # at Lvl {self.level}"
 
 class KindOpponent(Opponent):
     """ Way more kind than the general opponent"""
@@ -41,18 +41,32 @@ class KindOpponent(Opponent):
         Opponent.__init__(self, name, 0)
 
     def __str__(self):
-        return f"Kind Opponent {self.name} at Lvl {self.level}"
+        return f"Kind Opponent {self.name}" # at Lvl {self.level}"
 
 
 class SofterOpponent(Opponent):
-    """ Somewhat softer than the general opponent"""
+    """ Somewhat softer than the general opponent
+        Starts at low level but is willing to collaborate,
+        or at least pretends to.
+        Has a method collaborate() that can take hero's level
+        multiply it, so opponent will come out way better.
+
+    """
     def __init__(self, name):
-        Opponent.__init__(self, name, 50)
+        Opponent.__init__(self, name, 0)
 
     def __str__(self):
         return f"Softer Opponent {self.name} at Lvl {self.level}"
 
+    def collaborate(self, hero):
+        hero_roll = random.randint(1, 6) * hero.level
+        opponent_roll = random.randint(1, 6) * self.level
 
+        if hero_roll > opponent_roll:
+            self.level = hero.level * 10
+            return self.level
+        else:
+            return self.level
 
 
 
